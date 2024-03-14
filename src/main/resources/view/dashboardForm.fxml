@@ -33,16 +33,16 @@
                   <Image url="@../img/logo2.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="booksBtn" buttonType="RAISED" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="244.0" onAction="#booksBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Books">
+            <JFXButton fx:id="booksBtn" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="244.0" onAction="#booksBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Books">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="booksImg" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/dashboardIconClicked.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="logoutBtn" buttonType="RAISED" contentDisplay="RIGHT" layoutX="31.0" layoutY="704.0" onAction="#logoutBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #EFF9FE; -fx-font-size: 21px; -fx-text-fill: #FF5B5B; -fx-background-radius: 20;" text="Logout   ">
+            <JFXButton fx:id="logoutBtn" contentDisplay="RIGHT" layoutX="31.0" layoutY="704.0" onAction="#logoutBtnOnAction" opacity="0.79" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #EFF9FE; -fx-font-size: 21px; -fx-text-fill: #FF5B5B; -fx-background-radius: 20;" text="Logout   ">
                <graphic>
                   <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -51,45 +51,45 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="membersBtn" buttonType="RAISED" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="314.0" onAction="#membersBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Members">
+            <JFXButton fx:id="membersBtn" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="314.0" onAction="#membersBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Members">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="membersImg" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/dashboardIconClicked.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="branchesBtn" buttonType="RAISED" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="384.0" onAction="#branchesBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Branches">
+            <JFXButton fx:id="branchesBtn" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="384.0" onAction="#branchesBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Branches">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="branchesImg" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/dashboardIconClicked.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="usersBtn" buttonType="RAISED" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="454.0" onAction="#usersBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Users">
+            <JFXButton fx:id="usersBtn" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="454.0" onAction="#usersBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Settings">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="usersImg" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/dashboardIconClicked.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="transactionBtn" buttonType="RAISED" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="524.0" onAction="#transactionBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Transactions">
+            <JFXButton fx:id="transactionBtn" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="524.0" onAction="#transactionBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Transactions">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="transactionsImg" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/dashboardIconClicked.png" />
                      </image>
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton fx:id="dashboardBtn" buttonType="RAISED" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="174.0" onAction="#dashboardBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Dashboard">
+            <JFXButton fx:id="dashboardBtn" contentDisplay="TEXT_ONLY" layoutX="31.0" layoutY="174.0" onAction="#dashboardBtnOnAction" prefHeight="51.0" prefWidth="257.0" style="-fx-background-color: #0D78AA; -fx-font-size: 21px; -fx-text-fill: #EFF9FE; -fx-background-radius: 20;" text="Dashboard">
                <graphic>
-                  <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="dashboardImage" fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/dashboardIconClicked.png" />
                      </image>
