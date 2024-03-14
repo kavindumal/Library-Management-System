@@ -22,22 +22,6 @@
                   <Image url="@../img/loginPageImg.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="minusBtn" accessibleRole="BUTTON" fitHeight="42.0" fitWidth="42.0" layoutX="1547.0" layoutY="22.0" onMouseClicked="#minusBtnOnClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/minusBtn.png" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </ImageView>
-            <ImageView fx:id="closeBtn" accessibleRole="BUTTON" fitHeight="48.0" fitWidth="48.0" layoutX="1597.0" layoutY="19.0" onMouseClicked="#closeBtnOnClicked" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/closeBtn.png" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </ImageView>
             <ImageView fitHeight="608.0" fitWidth="656.0" layoutX="838.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/loginPageTxt.png" />
@@ -82,6 +66,22 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <ImageView fx:id="minusBtn" accessibleRole="BUTTON" fitHeight="42.0" fitWidth="42.0" layoutX="1563.0" layoutY="7.0" onMouseClicked="#minusBtnOnClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/minusBtn.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="closeBtn" accessibleRole="BUTTON" fitHeight="48.0" fitWidth="48.0" layoutX="1607.0" layoutY="4.0" onMouseClicked="#closeBtnOnClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/closeBtn.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>
