@@ -16,6 +16,9 @@ public class AppInitializer extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+
+    public static Stage stage2;
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent rootNode = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/loginForm.fxml")));
@@ -23,6 +26,7 @@ public class AppInitializer extends Application {
         stage.initStyle(StageStyle.UNDECORATED);
         stage.centerOnScreen();
         stage.setScene(scene);
+        this.stage2 =stage;
         stage.show();
     }
 }
