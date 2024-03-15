@@ -91,6 +91,12 @@ public class DashboardFormController implements Initializable {
         branchesImg.setImage(new Image("/img/branchesIconOnClicked.png"));
         branchesBtn.setStyle("-fx-content-display: left; -fx-background-color: #EFF9FE; -fx-text-fill: #0D78AA; -fx-font-size: 21px; -fx-background-radius: 20px");
         count = 4;
+        homePane.getChildren().clear();
+        try {
+            homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/branchesForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
@@ -123,6 +129,12 @@ public class DashboardFormController implements Initializable {
         membersImg.setImage(new Image("/img/membersIconOnClicked.png"));
         membersBtn.setStyle("-fx-content-display: left; -fx-background-color: #EFF9FE; -fx-text-fill: #0D78AA; -fx-font-size: 21px; -fx-background-radius: 20px");
         count = 3;
+        homePane.getChildren().clear();
+        try {
+            homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/membersForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
@@ -136,6 +148,12 @@ public class DashboardFormController implements Initializable {
         transactionsImg.setImage(new Image("/img/transactionIconOnClicked.png"));
         transactionBtn.setStyle("-fx-content-display: left; -fx-background-color: #EFF9FE; -fx-text-fill: #0D78AA; -fx-font-size: 21px; -fx-background-radius: 20px");
         count = 6;
+        homePane.getChildren().clear();
+        try {
+            homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/transactionsForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
@@ -144,6 +162,12 @@ public class DashboardFormController implements Initializable {
         usersImg.setImage(new Image("/img/settingsIconClicked.png"));
         usersBtn.setStyle("-fx-content-display: left; -fx-background-color: #EFF9FE; -fx-text-fill: #0D78AA; -fx-font-size: 21px; -fx-background-radius: 20px");
         count = 5;
+        homePane.getChildren().clear();
+        try {
+            homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/usersForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void loadPage() {
