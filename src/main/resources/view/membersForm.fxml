@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.controller.MembersFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane fx:id="membersPane" prefHeight="820.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.MembersFormController">
+   <children>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#1f93ff00" height="54.0" layoutX="816.0" layoutY="43.0" stroke="BLACK" strokeType="INSIDE" width="296.0" />
+      <JFXButton fx:id="searchBtn" contentDisplay="GRAPHIC_ONLY" layoutX="1126.0" layoutY="43.0" onAction="#searchBtnOnAction" prefHeight="54.0" prefWidth="64.0" style="-fx-background-color: #0D78AA; -fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/searchImg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/searchImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchTxt" layoutX="851.0" layoutY="48.0" onAction="#searchTxtOnAction" prefHeight="44.0" prefWidth="221.0" promptText="Search..." style="-fx-font-size: 23px; -fx-background-color: transparent;" />
+      <JFXComboBox fx:id="membersJoinTimeCB" layoutX="56.0" layoutY="48.0" prefHeight="38.0" prefWidth="176.0" />
+      <JFXComboBox fx:id="membersReturnsCB" layoutX="266.0" layoutY="48.0" prefHeight="38.0" prefWidth="176.0" />
+      <TableView fx:id="memberTableView" layoutX="56.0" layoutY="148.0" prefHeight="590.0" prefWidth="1115.0">
+         <columns>
+            <TableColumn fx:id="memberIdTC" prefWidth="149.0" text="Member id" />
+            <TableColumn fx:id="nameTC" prefWidth="323.0" text="Name" />
+            <TableColumn fx:id="emailTC" prefWidth="312.0" text="Email" />
+            <TableColumn fx:id="totalBorrowingTC" minWidth="0.0" prefWidth="174.0" text="Total Borrowing" />
+            <TableColumn fx:id="deleteMemberTC" minWidth="0.0" prefWidth="156.0" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="addBookBtn" layoutX="962.0" layoutY="754.0" onAction="#addBookBtnOnAction" prefHeight="51.0" prefWidth="221.0" style="-fx-background-color: #0D78AA; -fx-text-fill: #EFF9FE; -fx-background-radius: 20; -fx-font-size: 23px;" text="Add Member" />
+   </children>
 </AnchorPane>
