@@ -1,8 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 
 
 <AnchorPane prefHeight="820.0" prefWidth="1210.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HomeFormController">
-
+   <children>
+      <ImageView fitHeight="292.0" fitWidth="782.0" layoutX="-8.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/recHomePage.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="13.0" layoutY="10.0" style="-fx-font-size: 25px;" text="Good Morning" />
+      <Label layoutX="13.0" layoutY="46.0" style="-fx-font-size: 36px; -fx-font-weight: bold;" text="Name" />
+      <ImageView fitHeight="116.0" fitWidth="436.0" layoutX="33.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/recText.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="35.0" layoutY="247.0" prefHeight="51.0" prefWidth="221.0" style="-fx-background-color: #EFF9FE; -fx-text-fill: #0D78AA; -fx-background-radius: 20; -fx-font-size: 23px;" text="Do it now" />
+      <Pane layoutX="16.0" layoutY="364.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="23.0" layoutY="18.0" style="-fx-font-size: 25px;" text="Total Borrowed" />
+            <Label layoutX="83.0" layoutY="44.0" style="-fx-font-size: 90px;" text="0" />
+            <Label layoutX="72.0" layoutY="151.0" style="-fx-font-size: 25px;" text="Books" />
+            <ImageView fitHeight="153.0" fitWidth="153.0" layoutX="194.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/firstRecImg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="396.0" layoutY="364.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="33.0" layoutY="18.0" style="-fx-font-size: 25px;" text="Not Returned" />
+            <Label layoutX="83.0" layoutY="44.0" style="-fx-font-size: 90px;" text="0" />
+            <Label layoutX="72.0" layoutY="151.0" style="-fx-font-size: 25px;" text="Books" />
+            <ImageView fitHeight="153.0" fitWidth="153.0" layoutX="194.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/secondRecImg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="406.0" layoutY="584.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="23.0" layoutY="18.0" style="-fx-font-size: 25px;" text="Total Borrowed" />
+            <Label layoutX="83.0" layoutY="44.0" style="-fx-font-size: 90px;" text="0" />
+            <Label layoutX="72.0" layoutY="151.0" style="-fx-font-size: 25px;" text="Books" />
+            <ImageView fitHeight="153.0" fitWidth="153.0" layoutX="194.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/firstRecImg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="16.0" layoutY="594.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="23.0" layoutY="18.0" style="-fx-font-size: 25px;" text="Total Borrowed" />
+            <Label layoutX="83.0" layoutY="44.0" style="-fx-font-size: 90px;" text="0" />
+            <Label layoutX="72.0" layoutY="151.0" style="-fx-font-size: 25px;" text="Books" />
+            <ImageView fitHeight="153.0" fitWidth="153.0" layoutX="194.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/firstRecImg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#1f93ff00" height="54.0" layoutX="796.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="296.0" />
+      <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="1106.0" layoutY="23.0" prefHeight="54.0" prefWidth="64.0" style="-fx-background-color: #0D78AA; -fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/searchImg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Pane layoutX="794.0" layoutY="100.0" prefHeight="686.0" prefWidth="371.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20px;">
+         <children>
+            <ImageView fitHeight="104.0" fitWidth="104.0" layoutX="134.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/userImg.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="34.0" layoutY="157.0" prefHeight="30.0" prefWidth="305.0" style="-fx-font-size: 30px; -fx-font-weight: bold;" text="No Name" />
+            <Label alignment="CENTER" layoutX="34.0" layoutY="192.0" prefHeight="30.0" prefWidth="305.0" style="-fx-font-size: 20px;" text="\@username" />
+            <Label layoutX="34.0" layoutY="262.0" prefHeight="30.0" prefWidth="305.0" style="-fx-font-size: 20px;" text="Recently Borrowed" />
+            <JFXButton layoutX="76.0" layoutY="612.0" prefHeight="51.0" prefWidth="221.0" style="-fx-background-color: #0D78AA; -fx-text-fill: #EFF9FE; -fx-background-radius: 20; -fx-font-size: 23px;" text="Return Book" />
+         </children>
+      </Pane>
+      <TextField layoutX="831.0" layoutY="28.0" prefHeight="44.0" prefWidth="221.0" promptText="Search..." style="-fx-font-size: 23px; -fx-background-color: transparent;" />
+   </children>
 </AnchorPane>
