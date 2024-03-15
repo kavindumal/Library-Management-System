@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane prefHeight="820.0" prefWidth="1210.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BooksFormController">
+   <children>
+      <Rectangle arcHeight="70.0" arcWidth="70.0" fill="#1f93ff00" height="54.0" layoutX="806.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" width="296.0" />
+      <JFXButton fx:id="searchBtn" contentDisplay="GRAPHIC_ONLY" layoutX="1116.0" layoutY="33.0" onAction="#searchBtnOnAction" prefHeight="54.0" prefWidth="64.0" style="-fx-background-color: #0D78AA; -fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/searchImg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/searchImg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchTxt" layoutX="841.0" layoutY="38.0" onAction="#searchTxtOnAction" prefHeight="44.0" prefWidth="221.0" promptText="Search..." style="-fx-font-size: 23px; -fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

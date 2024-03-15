@@ -5,8 +5,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 public class HomeFormController {
+
+    @FXML
+    private AnchorPane homePane;
 
     @FXML
     private JFXButton borrowBookBtn;

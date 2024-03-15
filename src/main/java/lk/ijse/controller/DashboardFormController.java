@@ -77,6 +77,12 @@ public class DashboardFormController implements Initializable {
         booksImg.setImage(new Image("/img/booksIconOnClicked.png"));
         booksBtn.setStyle("-fx-content-display: left; -fx-background-color: #EFF9FE; -fx-text-fill: #0D78AA; -fx-font-size: 21px; -fx-background-radius: 20px");
         count = 2;
+        homePane.getChildren().clear();
+        try {
+            homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/booksForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML
@@ -98,6 +104,12 @@ public class DashboardFormController implements Initializable {
         dashboardImage.setImage(new Image("/img/dashboardIconClicked.png"));
         dashboardBtn.setStyle("-fx-content-display: left; -fx-background-color: #EFF9FE; -fx-text-fill: #0D78AA; -fx-font-size: 21px; -fx-background-radius: 20px");
         count = 1;
+        homePane.getChildren().clear();
+        try {
+            homePane.getChildren().add(FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/view/homeForm.fxml"))));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @FXML

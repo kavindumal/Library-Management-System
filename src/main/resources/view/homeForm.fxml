@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 
 
-<AnchorPane prefHeight="820.0" prefWidth="1210.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HomeFormController">
+<AnchorPane fx:id="homePane" prefHeight="820.0" prefWidth="1210.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.HomeFormController">
    <children>
       <ImageView fitHeight="292.0" fitWidth="782.0" layoutX="-8.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
          <image>
